@@ -6,4 +6,4 @@ function handleSearchSubmit(event) {
 }
 
 let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("Submit", handleSearchSubmit);
+searchFormElement.addEventListener("submit", handleSearchSubmit);
