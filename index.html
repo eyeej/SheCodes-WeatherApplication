@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
     <title>SheCodes Weather Application</title>
 </head>
 <body>
+<div class="weather-app-data">
     <header>
         <form class="search-form" id="search-form">
             <input type="search" placeholder="Enter a City..." required id="search-form-input" class="search-form-input">
@@ -14,29 +18,22 @@
         </form>
     </header>
     <main>
-    <div class="weather-app-data">
-    <h1 class="weather-app-city" id="city">Paris</h1>
-    <p class="weather-app-details">
-    <span id="time">Thursday 9:28,</span>
-    <span id="description">Clear Sky</span>
+
+    <h1>Paris</h1>
+    <p>
+    Thursday 9:28, Clear Sky
     <br>
-    Humidty: 
-    <strong id="wind-speed">3.6km</strong>
+    Humidty: 3.6km
     </p>
-    </div>
-    <br>
-    <div>🌤️ 19℃ </div>
-    <div class="weather-app-temperature-container"></div>
-
-
-
-        </div>
-    </main>
     
-</body>
+    <br>
+    <p>🌤️ 19℃ </p>
+    </main>
 <footer> Coded by
     <a href ="https://github.com/eyeej" target="_blank"> Emma Yee-Joy</a> open-sourced on,
     <a href ="https://github.com/eyeej/SheCodes-WeatherApplication" target="_blank">GitHub</a> and hosted on
     <a href ="https://shecodeswa.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+</footer>
+</body>
+</div>
 </html>
