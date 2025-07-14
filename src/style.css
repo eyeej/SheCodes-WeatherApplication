@@ -116,7 +116,7 @@ main {
     color:#f65282;
     margin-top: 10px;
     display: flex;
-    justfiy-content: center;
+    justify-content: center;
 
 }
 
@@ -124,9 +124,6 @@ main {
     padding: 0 10px; 
 
 }
-
-
-
 
 footer {
     border-bottom: 1px solid #f9f7fe;
