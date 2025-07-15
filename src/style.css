@@ -75,9 +75,7 @@ main {
 
 .weather-app-temperature-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+    
 }
 
 .weather-app-icon {
@@ -98,8 +96,7 @@ main {
 
 .weather-forecast {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px; 
+    justify-content: space-between;
 
 }
 
@@ -107,7 +104,7 @@ main {
     text-align: center;
     color:rgba(39, 33, 66, 0.4);
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 20px; 
 }
 
@@ -126,7 +123,7 @@ strong {
     color:#f65282;
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: column;
 
 }
 
