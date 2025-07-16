@@ -12,7 +12,7 @@ function refreshWeather(response) {
 
     cityElement.innerHTML = response.data.city;
     timeElement.innerHTML = formatDate(date);
-    temperatureElement.innerHTML = Math.round(temperature);
+    temperatureElement.innerHTML = temperature;
     descriptionElement.innerHTML = response.data.condition.description;
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     windspeedElement.innerHTML = `${response.data.wind.speed}km/h`;
@@ -52,7 +52,7 @@ function displayForecast() {
     let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
     let forecastHtml = "";
 
-    days.forEach(Function (days) {
+    days.forEach(function (day) {
         forecastHtml =
          forecastHtml +
             `
