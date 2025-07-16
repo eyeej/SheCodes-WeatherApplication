@@ -114,10 +114,6 @@ main {
 
 }
 
-strong {
-    font-weight: bolder;
-}
-
 .weather-forecast-temperatures {
     text-align: center;
     color:#f65282;
