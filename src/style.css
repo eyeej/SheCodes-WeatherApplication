@@ -96,7 +96,7 @@ main {
 
 .weather-forecast {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -118,7 +118,7 @@ main {
 }
 
 .weather-forecast-temperatures {
-    text-align: center;
+     text-align: center;
     color:#f65282;
     margin-top: 10px;
     display: flex;

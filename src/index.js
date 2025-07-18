@@ -63,6 +63,7 @@ function getForecast(city) {
 
 
 function displayForecast(response) {
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let forecastHtml = "";
 
     response.data.daily.forEach(function (day, index) {
@@ -72,7 +73,8 @@ function displayForecast(response) {
             `
             <div class="weather-forecast-day">
                 <div class="weather-forecast-date">${formatDay(day.time)}</div>
-                <div class="weather-forecast-icon"> <img src ="${day.condition.icon_url}" class="weather-forecast-icon" /></div>
+                
+                 <img src ="${day.condition.icon_url}" class="weather-forecast-icon" />
                 <div class="weather-forecast-temperatures">
                     <div class="weather-forecast-temperature"><strong>${Math.round(day.temperature.maximum)}º</strong></div>
                     <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}º</div>
@@ -85,7 +87,7 @@ function displayForecast(response) {
     let forecastElement = document.querySelector("#forecast");
     forecastElement.innerHTML = forecastHtml;
 
-}
+    }
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
